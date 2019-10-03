@@ -17,4 +17,6 @@ class RummikubTile:
         return self._tiles[position]
 
 rummikub_tiles = RummikubTile()
-print(rummikub_tiles._tiles)
+
+for tile in rummikub_tiles._tiles:
+    print(tile)
