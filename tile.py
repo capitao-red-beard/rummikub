@@ -12,7 +12,7 @@ class RummikubTile:
 
     def __len__(self):
         return len(self._tiles)
-    
+
     def __getitem__(self, position):
         return self._tiles[position]
 
