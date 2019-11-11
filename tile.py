@@ -1,8 +1,10 @@
 from collections import namedtuple
 
+
 Tile = namedtuple('Tile', ['value', 'color'])
 
-class RummikubTile:
+
+class RummikubTiles:
     values = [str(n) for n in range(1, 14)]
     colors = 'red blue orange black'.split()
 
@@ -16,7 +18,10 @@ class RummikubTile:
     def __getitem__(self, position):
         return self._tiles[position]
 
-rummikub_tiles = RummikubTile()
+
+'''
+rummikub_tiles = RummikubTiles()
 
 for tile in rummikub_tiles._tiles:
     print(tile)
+'''
